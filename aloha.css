@@ -5,17 +5,20 @@
 }
 
 .flex-box-header {
-  align-items: stretch;
   display: flex;
-  height: 150px;
+  align-items: stretch;
+  flex-direction: column-reverse;
+  height: 80px;
+  min-width: 50px;
   justify-content: space-between;
 }
 
 .flex-box-button {
-  align-items: flex;
-  display: center;
-  height: 100px;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-self: center;
+  justify-content: space-around;
   padding: 75px;
   font-size: bold;
   color: firebrick;
@@ -64,23 +67,32 @@ footer {
 }
 .site-banner {
   display: flex;
-  padding: 50px;
-  height: 300px;
+  padding: 2px;
+  height: 400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/flower-bkgd.jpg"), url("../images/banner-girl.png");
+    url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  flex-direction: Column;
+  position: relative;
 }
 
 .site-banner-title {
-  height: 200px;
+  display: flex;
+  flex-flow: column;
+
   font-size: 25px;
   font-weight: bolder;
+  text-align: center;
   color: white;
 }
 .site-banner-summer {
-  font-size: 50px;
+  display: flex;
+  flex-flow: column;
+  font-size: 55px;
   font-weight: 30px;
+  margin: -3%;
+  text-align: center;
   color: white;
 }
 
