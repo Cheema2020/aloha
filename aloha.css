@@ -1,7 +1,9 @@
-* {
+/* {
   box-sizing: border-box;
   border: 1px dashed red;
 }
+*/
+
 .container {
   background-color: black;
   box-sizing: border-box;
@@ -127,12 +129,13 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 2px;
-  height: 50vh;
+  height: 49vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
   background-size: cover, 150px 369px, cover;
   background-position: center, center 50px, center;
   background-repeat: no-repeat;
+  margin: 0px;
 
   /* position: relative; */
 }
@@ -144,6 +147,7 @@ footer {
   font-weight: bolder;
   text-align: center;
   color: white;
+  margin: 35px;
 }
 .site-banner-summer {
   display: flex;
@@ -170,6 +174,9 @@ footer {
   align-items: center;
   width: 50%;
   height: 50vw;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
 }
 
 .box1 {
@@ -179,27 +186,27 @@ footer {
 }
 
 .box2 {
-  background-image: url("./images/mens-category.jpg");
+  background-image: url("./images/trends-category.jpg");
   background-size: cover;
 }
 
 .box3 {
-  background-image: url("./images/mens-category.jpg");
+  background-image: url("./images/glasses-category.jpg");
   background-size: cover;
 }
 
 .box4 {
-  background-image: url("./images/mens-category.jpg");
+  background-image: url("./images/sale-category.jpg");
   background-size: cover;
 }
 
 .box5 {
-  background-image: url("./images/mens-category.jpg");
+  background-image: url("./images/bags-category.jpg");
   background-size: cover;
 }
 
 .box6 {
-  background-image: url("./images/mens-category.jpg");
+  background-image: url("./images/womens-category.jpg");
   background-size: cover;
   width: 100%;
 }
@@ -244,6 +251,12 @@ footer {
   width: 100%;
 }
 */
+
+.red-text {
+  color: red;
+  font-size: 20px;
+}
+
 .carousel-cell {
   width: 100%;
   text-align: center;
