@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  border: 1px dashed red;
+}
 .container {
   background-color: black;
   box-sizing: border-box;
@@ -6,10 +10,11 @@
 
 .flex-box-header {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
-  max-height: 80px;
+  justify-content: space-between;
+  /* max-height: 80px; */
 }
 /*display: flex;
   flex-wrap: wrap;
@@ -18,41 +23,57 @@
 }
 .child--featured {
   flex-basis: content; */
-
+img {
+  max-width: 100%;
+}
 .aloha-logo {
   display: flex;
   flex-wrap: wrap;
-  order: -1;
+  order: 1;
   justify-content: flex-start;
-  max-height: 106px;
+  /* height: 168px; */
+  /* max-width: 100px; */
   align-content: space-between;
   text-align: left;
   flex-basis: content;
+  width: 50%;
+}
+.aloha-logo img {
+  width: 100px;
 }
 
 .cart-icon {
   display: flex;
   flex-wrap: wrap;
-  order: 1;
+  flex-direction: row;
+  order: 2;
   justify-content: flex-end;
-  max-height: 60px;
-  min-width: 450px;
+  /* height: 168px; */
+  max-width: 450px;
   align-content: space-between;
   text-align: right;
   flex-basis: content;
+  width: 50%;
+}
+.cart-icon img {
+  width: 60px;
 }
 
 .flex-box-button {
   display: flex;
-  flex-wrap: wrap;
-  order: 0;
+  flex-wrap: nowrap;
+  order: 3;
   flex-direction: row;
-  align-content: space-around;
+  justify-content: space-around;
   align-self: center;
-  padding: 75px;
-  margin: 20px;
+  /* padding: 75px; */
   font-size: bold;
   color: firebrick;
+  width: 100%;
+}
+.flex-box-button a {
+  display: block;
+  padding: 0.625rem;
 }
 
 .container {
@@ -102,14 +123,18 @@ footer {
 }
 .site-banner {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2px;
-  height: 400px;
+  height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
   background-size: cover, 150px 369px, cover;
+  background-position: center, center 50px, center;
   background-repeat: no-repeat;
-  flex-direction: Column;
-  position: relative;
+
+  /* position: relative; */
 }
 
 .site-banner-title {
@@ -132,18 +157,51 @@ footer {
 
 .departments {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 400px;
+  flex-wrap: wrap;
+  text-align: center;
+  /* align-content: stretch; */
+  /* height: 400px; */
+  /* width: 100px; */
 }
 
 .box {
   display: flex;
-  width: 40px;
-  height: 200px;
-  margin: 5px;
-  background-image: url ("..//images/mens-category.jpg");
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50vw;
+}
+
+.box1 {
+  background-image: url("./images/mens-category.jpg");
   background-size: cover;
+  width: 100%;
+}
+
+.box2 {
+  background-image: url("./images/mens-category.jpg");
+  background-size: cover;
+}
+
+.box3 {
+  background-image: url("./images/mens-category.jpg");
+  background-size: cover;
+}
+
+.box4 {
+  background-image: url("./images/mens-category.jpg");
+  background-size: cover;
+}
+
+.box5 {
+  background-image: url("./images/mens-category.jpg");
+  background-size: cover;
+}
+
+.box6 {
+  background-image: url("./images/mens-category.jpg");
+  background-size: cover;
+  width: 100%;
 }
 
 .sign-up {
@@ -180,13 +238,47 @@ footer {
   text-align: left;
 }
 
+/*.main-carousel {
+  display: block;
+  height: 200%;
+  width: 100%;
+}
+*/
 .carousel-cell {
   width: 100%;
   text-align: center;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 600px) {
   .carousel-cell {
+    width: 50%;
+  }
+
+  .aloha-logo {
+    order: 1;
+    width: 15%;
+  }
+
+  .cart-icon {
+    order: 3;
+    width: 15%;
+  }
+
+  .flex-box-button {
+    order: 2;
+    width: 70%;
+  }
+  .box {
+    width: 25%;
+    height: 25vw;
+  }
+
+  .box1 {
+    width: 50%;
+  }
+
+  .box6 {
     width: 50%;
   }
 }
