@@ -10,5 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
     wrapAround: true
   });
 
-  //add carousel js
+  //add carousel
 }); // end of doc
+
+/*
+const. button = document.getElementById("signup-form");​
+  button.addEventListener("click", function(event) {​
+*/

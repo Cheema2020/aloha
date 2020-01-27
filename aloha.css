@@ -1,14 +1,12 @@
-/* {
-  box-sizing: border-box;
-  border: 1px dashed red;
-}
-*/
+/*
 
 .container {
-  background-color: black;
+  background-color: #2d2d2d;
   box-sizing: border-box;
   text-align: center;
 }
+
+/* headder*/
 
 .flex-box-header {
   display: flex;
@@ -16,15 +14,9 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  /* max-height: 80px; */
+  height: 41px;
 }
-/*display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
-}
-.child--featured {
-  flex-basis: content; */
+
 img {
   max-width: 100%;
 }
@@ -33,15 +25,13 @@ img {
   flex-wrap: wrap;
   order: 1;
   justify-content: flex-start;
-  /* height: 168px; */
-  /* max-width: 100px; */
   align-content: space-between;
   text-align: left;
   flex-basis: content;
   width: 50%;
 }
 .aloha-logo img {
-  width: 100px;
+  width: 145px;
 }
 
 .cart-icon {
@@ -50,7 +40,6 @@ img {
   flex-direction: row;
   order: 2;
   justify-content: flex-end;
-  /* height: 168px; */
   max-width: 450px;
   align-content: space-between;
   text-align: right;
@@ -68,24 +57,21 @@ img {
   flex-direction: row;
   justify-content: space-around;
   align-self: center;
-  /* padding: 75px; */
-  font-size: bold;
-  color: firebrick;
   width: 100%;
 }
-.flex-box-button a {
-  display: block;
-  padding: 0.625rem;
+
+.main-menu-link {
+  text-decoration-line: none;
+  font-weight: 700;
+  color: #e2574c;
 }
 
-.container {
-  max-width: 100px;
-}
+/* site style */
 
 body,
 html {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  color: #2d2d2d;
   text-align: center;
 }
 
@@ -107,37 +93,44 @@ h6 {
   font-family: "playfair display";
 }
 
-/* Content Control */
-
-/* .site-banner {
-    padding: 100px 0px;
-    background-image: (flower-bkgd,jpg);
-    background-size: contain;
-} */
-
 header,
 article,
 section,
 footer {
   margin: 20px 0 20px 0px;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid white;
 }
+
+.crafted-style {
+  font-size: 1.15rem;
+}
+
+.hand-craft {
+  font-style: italic;
+}
+
+.style {
+  font-style: normal;
+  font-weight: bolder;
+  font-style: 700;
+}
+
+/* main banner */
+
 .site-banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2px;
-  height: 49vh;
+  height: 47vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
   background-size: cover, 150px 369px, cover;
   background-position: center, center 50px, center;
   background-repeat: no-repeat;
   margin: 0px;
-
-  /* position: relative; */
 }
 
 .site-banner-title {
@@ -146,7 +139,7 @@ footer {
   font-size: 25px;
   font-weight: bolder;
   text-align: center;
-  color: white;
+  color: #fff;
   margin: 35px;
 }
 .site-banner-summer {
@@ -156,69 +149,127 @@ footer {
   font-weight: 30px;
   margin: -3%;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
+/* departments */
+
 .departments {
+  padding: 0px;
+}
+
+.department-list {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  /* align-content: stretch; */
-  /* height: 400px; */
-  /* width: 100px; */
+  text-align: stretch;
+  height: 100%;
 }
 
 .box {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   width: 50%;
   height: 50vw;
   font-size: 1.8rem;
   font-weight: 700;
-  color: white;
+  color: #fff;
 }
 
 .box1 {
   background-image: url("./images/mens-category.jpg");
   background-size: cover;
   width: 100%;
+  color: #fff;
+  border-style: solid;
+  border-width: 4px;
 }
 
 .box2 {
+  content: none;
+
   background-image: url("./images/trends-category.jpg");
   background-size: cover;
+  color: #fff;
+  border-style: solid;
+  border-width: 4px;
 }
 
 .box3 {
   background-image: url("./images/glasses-category.jpg");
   background-size: cover;
+  position: top right;
+  color: #fff;
+  border-style: solid;
+  border-width: 4px;
 }
 
 .box4 {
   background-image: url("./images/sale-category.jpg");
   background-size: cover;
+  color: #fff;
+  border-style: solid;
+  border-width: 4px;
 }
 
 .box5 {
   background-image: url("./images/bags-category.jpg");
   background-size: cover;
+  color: #fff;
+  border-style: solid;
+  border-width: 4px;
 }
 
 .box6 {
   background-image: url("./images/womens-category.jpg");
   background-size: cover;
   width: 100%;
+  color: #fff;
+  border-style: solid;
+  border-width: 4px;
 }
+
+/* SIGN UP section */
 
 .sign-up {
   padding: 100px;
-  height: 250px;
+  height: 141px;
   background-image: url("images/wave-bkgd.jpg");
   align-items: flex-start;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #d7d7d7;
+}
+
+.signup-box {
+  display: block;
+  margin: 2rem auto 0;
+  position: relative;
+  max-width: 400px;
+  height: 30px;
+  align-content: center;
+}
+
+.signup-form-submit {
+  position: absolute;
+  right: -103px;
+  top: 20%;
+  padding-right: 2%;
+  width: 32%;
+  font-size: large;
+  align-items: flex-end;
+  border-radius: 50px;
+  background-color: #e2574c;
+  color: #d7d7d7;
+  height: 120%;
+}
+
+.signup-form-input {
+  width: 125%;
+  height: 40px;
+  font-size: large;
+  align-items: center;
+  border-radius: 25px;
 }
 
 .site-banner-title span {
@@ -233,12 +284,12 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   text-align: left;
-  background-color: black;
+  background-color: #2d2d2d;
   color: white;
 }
 
 .social-links {
-  height: 30vh;
+  height: 28vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -253,7 +304,7 @@ footer {
 */
 
 .red-text {
-  color: red;
+  color: #e2574c;
   font-size: 20px;
 }
 
@@ -280,10 +331,10 @@ footer {
 
   .flex-box-button {
     order: 2;
-    width: 70%;
+    width: 50%;
   }
   .box {
-    width: 25%;
+    width: 24%;
     height: 25vw;
   }
 

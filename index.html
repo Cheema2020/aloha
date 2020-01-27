@@ -14,29 +14,33 @@
     <script src="script.js"></script>
 </head>
     <body>
+        <!---headder section-->
  <header class="flex-box-header">
         <div class="aloha-logo"><img src="images/aloha-logo.svg"/></div>
         <div class="cart-icon"><img src="images/cart-icon.svg"/></div>
         <nav class="flex-box-button">
-            <a>ABOUT</a>
-            <a>SHOP</a>
-            <a>FEATURED</a>
-            <a>UPDATE</a>
+            <a href="#about" class="main-menu-link">ABOUT</a>
+            <a href="#shop" class="main-menu-link">SHOP</a>
+            <a href="#featured" class="main-menu-link">FEATURED</a>
+            <a href="#update" class="main-menu-link">UPDATE</a>
         </nav>
     </header>
+    <!--site banner-->
  <section class="site-banner">
      <h3 class="site-banner-title"> New COLLECTION</h3>
      <h4 class="site-banner-summer"> Spring/Summer 2019 </h4>
  </section>
  <!-- hand crafted section -->
  <section>
-     <h2>Hand-Crafted Styles</h2>
-     <h4>Aloha Apparel Co. sells only the finest ready-to-travel clothing.</BR></h4>
-        <h4> Browse our current selection of products or sign-up for updates below.</h4>
+     <a name="about"></a>
+     <h2 class="hand-craft">Hand-Crafted <span class="style">Styles</h2></span>
+     <p class="crafted-style">Aloha Apparel Co. sells only the finest ready-to-travel clothing.<br></p>
+         <p>Browse our current selection of products or sign-up for updates below.</p>
  </section>
  <!-- departments -->
- <section> 
-     <div class="departments">
+ <section class="departments"> 
+     <a name="shop"></a>
+     <div class="department-list">
         <div class="box1 box"><a>MENS</a></div>
         <div class="box2 box"><a>TRENDS</a></div>
         <div class="box3 box"><a>GLASSES</a></div>
@@ -45,19 +49,15 @@
         <div class="box6 box"><a>WOMANS</a></div>
      </div>
  </section>
+ <a name="featured"></a>
  <!-- <most loved products </title> -->
     <h1>MOST LOVED PRODUCTS</h1>
     
     <!-- Flic<div class=kity HTML init -->
 
     <div class="main-carousel">
-  <div class="carousel-cell">
-      <img src="images/stretch-knit-dress.jpg"/>
-  <p>DRESSES</p>
-  <div class="red-text">Stretch-Knit-Dress
-
-  </div><br>$169.00
-</div>
+  <div class="carousel-cell"><img src="images/stretch-knit-dress.jpg"/>
+  <p>DRESSES</p><div class="red-text">Stretch-Knit-Dress</div><br>$169.00</div>
 
   <div class="carousel-cell"><img src="images/cotton-blue-shirt.jpg"/>
   <p>SHIRTS</p><div class="red-text">Cotton Blue Shirt</div><br>$89.00</div>
@@ -80,12 +80,13 @@
  
  <!-- sign up for updates -->
  <section class= "sign-up">
+     <a name="update"></a>
 <h3> Sign-up For updates</h3>
 <h4>Stay updated on our latest product releases, be first to find out about Stay</BR> upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</h4>
-<div form class="signup-box" id="signup-form">
-    <input class="signup-form-input" type="text" placeholder="message">
-    <input class="signup-form-submit" type="submit" value="send">
-</div>
+<form class="signup-box" id="signup-form">
+    <input class="signup-form-input" type="text" placeholder="Your e-Mail">
+    <input class="signup-form-submit" type="submit" value="Submit">
+</form>
 </section>
  <footer class= "site-footer">
      <div class= "footer-container">
